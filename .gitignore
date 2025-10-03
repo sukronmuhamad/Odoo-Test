@@ -1,0 +1,21 @@
+# Python files and bytecode
+*.pyc
+__pycache__
+.env
+.DS_Store
+
+# Odoo environment folders
+odoo16_clean_env/
+odoo16_final_env/
+odoo16_fix/
+
+# Configuration and runtime files
+odoo-16/odoo.conf
+odoo-16/openerp-server.log
+odoo-16/.config/
+odoo-16/.local/
+odoo-16/sessions/
+odoo-16/data_dir/
+
+# Database files (jika ada)
+*openerp-server.pid
