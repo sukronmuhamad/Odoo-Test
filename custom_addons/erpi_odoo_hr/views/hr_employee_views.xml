@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_inherit_erpi_hr" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherit.erpi.hr</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+       <field name="arch" type="xml">
+    <xpath expr="//page[@name='hr_settings']" position="after">
+        <page name="other_information_tab" string="Other Information">
+            <group>
+                <group string="Medical Information">
+                    <field name="blood_group"/>
+                    <field name="rhesus"/>
+                    <field name="medical_record_no"/>
+                </group>
+                <group string="BPJS Information">
+                    <field name="bpjs_kesehatan_no"/>
+                    <field name="bpjs_ketenagakerjaan_no"/>
+                </group>
+            </group>
+        </page>
+    </xpath>
+</field>
+    </record>
+</odoo>
